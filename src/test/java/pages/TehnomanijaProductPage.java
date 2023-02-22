@@ -24,11 +24,6 @@ public class TehnomanijaProductPage extends BaseHelper {
     @FindBy(className = "MiniCartSlot")
     WebElement miniCartComponent;
 
-    @FindBy (className = "minicart--dropdown")
-    WebElement endShopingDropdown;
-
-
-
     private void addProductToBag() throws InterruptedException {
         Thread.sleep(1000);
 
@@ -46,11 +41,7 @@ public class TehnomanijaProductPage extends BaseHelper {
 
         wdWait.until(ExpectedConditions.visibilityOf(miniCartComponent));
         WebElement toBag = miniCartComponent.findElement(By.className("minicart-component-shopping-bag")).findElement(By.className("mini-cart-popover--icon")).findElement(By.className("tehnomanijaMinicart"));
-        // wdWait.until(ExpectedConditions.invisibilityOf(endShopingDropdown));
-
-        //js.executeScript("arguments[0].scrollIntoView({block:\"center\"});",toBag);
         wdWait.until(ExpectedConditions.elementToBeClickable(toBag));
-
         toBag.click();
 
     }

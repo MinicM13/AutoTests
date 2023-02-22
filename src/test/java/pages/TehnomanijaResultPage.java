@@ -44,7 +44,6 @@ public class TehnomanijaResultPage extends BaseHelper {
         wdWait.until(ExpectedConditions.visibilityOf(minPriceField));
         wdWait.until(ExpectedConditions.elementToBeClickable(minPriceField));
         minPriceField.clear();
-        //  minPriceField.sendKeys(Keys.BACK_SPACE);
         wdWait.until(ExpectedConditions.elementToBeClickable(minPriceField));
         minPriceField.sendKeys(min);
 
@@ -55,7 +54,6 @@ public class TehnomanijaResultPage extends BaseHelper {
 
         wdWait.until(ExpectedConditions.elementToBeClickable(maxPriceField));
         maxPriceField.clear();
-        // maxPriceField.sendKeys(Keys.BACK_SPACE);
         wdWait.until(ExpectedConditions.elementToBeClickable(maxPriceField));
         maxPriceField.sendKeys(max);
 
@@ -68,9 +66,7 @@ public class TehnomanijaResultPage extends BaseHelper {
 
     }
 
-    private void choosePhones() throws InterruptedException {
-
-        // Thread.sleep(1000);
+    private void choosePhones() {
 
         wdWait.until(ExpectedConditions.visibilityOf(phonesSelect));
         js.executeScript("arguments[0].scrollIntoView({block:\"center\"});", phonesSelect);

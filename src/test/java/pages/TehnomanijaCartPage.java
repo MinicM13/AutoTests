@@ -19,10 +19,6 @@ public class TehnomanijaCartPage extends BaseHelper {
     }
 
 
-
-    @FindBy(className = "top-parent")
-    WebElement  productComponent;
-
     public String title;
 
     public void articleTitle() {

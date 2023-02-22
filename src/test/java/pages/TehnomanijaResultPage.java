@@ -106,5 +106,3 @@ public class TehnomanijaResultPage extends BaseHelper {
     }
 }
 
-public class TehnomanijaResultPage {
-}

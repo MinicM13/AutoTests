@@ -44,7 +44,7 @@ public class TehnomanijaSearchTest extends BaseTest{
      System.out.println("Cena proizvoda pretvorena u Int je: " + numberPrice);
 
 
-    Assert.assertTrue("Article " + naslov + "  is not within given range!",
+    Assert.assertTrue("Article " + naslov + " price  is not within given range!",
             numberPrice >= Integer.parseInt(min) && numberPrice <= Integer.parseInt(max));
 
 
